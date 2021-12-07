@@ -1,0 +1,48 @@
+GET http://localhost:4000/api/v1/gateways
+
+###
+POST http://localhost:4000/api/v1/gateways
+Content-Type: application/json
+
+{
+      "serial": "26fh4087l8d7",
+      "name": "Gateway with Invalid IP",
+      "ipv4": "192.168",
+}
+
+###
+PATCH http://localhost:4000/api/v1/gateways/61ad463c188906c538349d80
+Content-Type: application/json
+
+{
+    "serial": "46789fh087lso98d7",
+    "name": "My Gateway 1",
+    "ipv4": "192.168.93.3"  
+}
+
+###
+GET http://localhost:4000/api/v1/gateways/61ad46e299b7bec7d3ad4346
+
+###
+DELETE http://localhost:4000/api/v1/gateways/61ad46e299b7bec7d3ad4346
+
+###
+POST http://localhost:4000/api/v1/gateways/61ad78e7233192da5efb4f49/devices 
+Content-Type: application/json
+
+{
+    "uid": 54632,
+    "vendor": "Vendor 1",
+    "status": "OFFLINE"
+}
+###
+DELETE http://localhost:4000/api/v1/gateways/61ad78e7233192da5efb4f49/devices/61ae31eccd22f726515fbd20
+Content-Type: application/json
+
+{
+    "uid": 5463,
+    "vendor": "Vendor 1",
+    "status": "OFFLINE"
+}
+
+

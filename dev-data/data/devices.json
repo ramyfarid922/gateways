@@ -1,0 +1,22 @@
+[
+  {
+    "uid": "67543",
+    "vendor": "Vendor 1",
+    "status": "OFFLINE"
+  },
+  {
+    "uid": "47543",
+    "vendor": "Vendor 2",
+    "status": "OFFLINE"
+  },
+  {
+    "uid": "27543",
+    "vendor": "Vendor 3",
+    "status": "ONLINE"
+  },
+  {
+    "uid": "17543",
+    "vendor": "Vendor 4",
+    "status": "OFFLINE"
+  }
+]
